@@ -1,0 +1,9 @@
+[Unit]
+Description=this is wireless printer WAN startup script
+
+[Service]
+Type=simple
+ExecStart=/root/wirepriWANservice.sh start
+
+[Install]
+WantedBy=default.target
