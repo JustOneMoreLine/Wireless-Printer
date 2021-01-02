@@ -1,3 +1,4 @@
 # Wireless Printer Setup
-1. h
-2. a
+## Install linux-4.15.1-popcorn-0.2
+run
+<code>dajkdas</code>
