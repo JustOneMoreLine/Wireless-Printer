@@ -12,10 +12,8 @@ run <code>sudo dpkg -i linux-*-4.15.1-popcorn-0.2*</code>
 </code>
 
 2. Configure cups by copying cupsd.conf to /etc/cups/cupsd.conf
-<code>
-  sudo cp cupsd.conf /etc/cups/cupsd.conf
-  sudo systemctl restart cups
-</code>
+    sudo cp cupsd.conf /etc/cups/cupsd.conf
+    sudo systemctl restart cups
 
 
 3. Add yourself to CUPS lpadmin group
