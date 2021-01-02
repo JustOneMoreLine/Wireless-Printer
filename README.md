@@ -59,6 +59,11 @@ run <code>sudo cp initramfs.conf /etc/initramfs-tools/initramfs.conf</code>
 3. run <code>sudo systemctl start wirepriWAN.service; sudo systemctl enable wirepriWAN.service</code>
 done
 
+### F. Set a static IP
+1. Edit your netplan setting by running <code>sudo vi /etc/netplan/*.yaml</code>
+2. Follow the 50-cloud-init.yaml as an example
+3. Save
+
 ## How to use
 1. Open the system
 2. Print by uploading file to http://wirepri.herokuapp.com/ or print from a printing software from a device on the same network as your system.
