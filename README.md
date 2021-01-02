@@ -1,6 +1,6 @@
 # Wireless Printer
 ## Setup
-Follow the instructions below or just import WirelessPrinter.ova to your Virtual Machine Box 
+Follow the instructions below
 ### A.Install linux-4.15.1-popcorn-0.2
 run <code>sudo dpkg -i linux-*-4.15.1-popcorn-0.2*</code>
 
