@@ -6,9 +6,7 @@ run <code>sudo dpkg -i linux-*-4.15.1-popcorn-0.2*</code>
 1. run
 <code>
   sudo apt-get install cups -y
-  
   sudo systemctl start cups
-  
   sudo systemctl enable cups
 </code>
 
