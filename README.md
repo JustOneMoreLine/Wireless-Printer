@@ -5,6 +5,19 @@ run <code>sudo dpkg -i linux-*-4.15.1-popcorn-0.2*</code>
 ## B. Install and setup CUPS
 1. run
 
+    -- Adding extra parse for church numbers abstraction
+    cnumber :: Parser (LambdaExpr String)
+    cnumber = do
+	    num <- many1 digit
+	    return(numAbs (read num :: Integer))
+    
+    -- generate church numerals
+    numAbs 0 = Abs "s" (Abs "z" (Var "z"))
+    numAbs 1 = Abs "s" (Abs "z" (App (Var "s") (Var "z")))
+    numAbs x = Abs "s" (Abs "z" (applicationLoop x))
+    applicationLoop 1 = App (Var "s") (Var "z")
+    applicationLoop x = App (Var "s") (applicationLoop (x - 1))
+
 <code>
   sudo apt-get install cups -y
   sudo systemctl start cups
