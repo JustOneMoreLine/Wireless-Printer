@@ -10,17 +10,20 @@ run <code>sudo dpkg -i linux-*-4.15.1-popcorn-0.2*</code>
   sudo systemctl enable cups
 </code>
 
+
 2. Configure cups by copying cupsd.conf to /etc/cups/cupsd.conf
 <code>
   sudo cp cupsd.conf /etc/cups/cupsd.conf
   sudo systemctl restart cups
 </code>
 
+
 3. Add yourself to CUPS lpadmin group
 <code>
   sudo usermod -a -G lpadmin 'yourself'
   sudo systemctl restart cups
 </code>
+
 
 ## C. Install EPSON L1300 Series Printer
 1. Install lsb
